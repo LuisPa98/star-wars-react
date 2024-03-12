@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import CharacterEdit from "./screens/CharacterEdit.jsx";
+import CharacterDetail from "./screens/CharacterDetail.jsx";
+import CharacterAdd from "./screens/CharacterAdd.jsx";
+import Nav from "./components/Nav.jsx";
+import Characters from "./screens/Characters.jsx";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Routes>
+        <Route path="/characters" element={<Characters />} /> 
+        <Route path="/characters/:id" element={<CharacterDetail />} />
+        <Route path="/add-character" element={<CharacterAdd />} />
+        <Route path="/characters/:id/edit" element={<CharacterEdit />} />
+      </Routes>
     </div>
   );
 }
