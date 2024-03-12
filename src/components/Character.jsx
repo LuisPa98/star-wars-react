@@ -1,10 +1,11 @@
 import {Link} from "react-router-dom"
+import "./character.css"
 
 function Character({character}) {
   return (
     <div>
-        <Link to={`/characters/${character._id}`}>
-            <p className="characters-Name">{character.name}</p>
+        <Link className="charactersName" to={`/characters/${character._id}`}>
+            <p>{character.name}</p>
         </Link>
     </div>
   )

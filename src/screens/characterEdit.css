@@ -1,0 +1,22 @@
+.charEditContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 5px;
+    height: 2rem;
+}
+
+button {
+    height: 2rem;
+}

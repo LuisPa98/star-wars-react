@@ -1,4 +1,5 @@
 import CharacterEdit from "./screens/CharacterEdit.jsx";
+import Home from "./screens/Home.jsx"
 import CharacterDetail from "./screens/CharacterDetail.jsx";
 import CharacterAdd from "./screens/CharacterAdd.jsx";
 import Nav from "./components/Nav.jsx";
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Nav />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/characters" element={<Characters />} /> 
         <Route path="/characters/:id" element={<CharacterDetail />} />
         <Route path="/add-character" element={<CharacterAdd />} />

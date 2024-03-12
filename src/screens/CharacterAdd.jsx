@@ -1,20 +1,15 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { addCharacter } from "../services/characters.js";
+import "./characterAdd.css"
 
 function CharacterAdd() {
 const [character, setCharacter] = useState({
     name: "",
-    haircolor:"" ,
-    eyecolor: "",
     gender: "",
     hair_color: "",
     eye_color: "",
-    homeworld: "", 
-    films: "",
-    species: "", 
-    vehicles: "",
-    starships: ""
+    homeworld: ""
 })
 
 let navigate = useNavigate()
@@ -23,7 +18,7 @@ const handleSubmit = async (e) => {
     e.preventDefault()
 
     await addCharacter(character)
-    navigate("/cats")
+    navigate("/character")
 }
 
 const handleChange = (e) => {
@@ -36,16 +31,38 @@ const handleChange = (e) => {
 }
 
 return (
-    <div>
+    <div className="charAddContainer">
         <h3>Expand this Library by adding your own entries!</h3>
         <form onSubmit={handleSubmit}>
             <input
                 type="text"
-                placeholder="Enter characters name"
+                placeholder="Enter character name"
                 name="name"
                 value={character.name}
                 onChange={handleChange}
             />
+            <input
+                type="text"
+                placeholder="Enter character gender"
+                name="gender"
+                value={character.gender}
+                onChange={handleChange}
+            />
+            <input
+                type="text"
+                placeholder="Enter character eye color"
+                name="eye_color"
+                value={character.eye_color}
+                onChange={handleChange}
+            />
+            <input
+                type="text"
+                placeholder="Enter character hair color"
+                name="hair_color"
+                value={character.hair_color}
+                onChange={handleChange}
+            />
+            <button type="submit">Add to the database</button>
         </form>
     </div>
   )

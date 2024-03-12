@@ -1,0 +1,8 @@
+.charactersContainer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
