@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Star Wars React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Star Wars App. This is a database that has full CRUD capabilities you can add to, edit any wrong info put on any character page posted on here. you can add a character and update as the franchise continues. 
 
-## Available Scripts
+## Navigating The App
 
-In the project directory, you can run:
+<strong> Home: </strong> </br>
+You are loaded in the front page gives you a description of what the app is about and the goal for it.
 
-### `npm start`
+<strong> Characters: </strong> </br>
+You are in the Characters page with a list of Characters from the franchise, when you click on it, it will display information about the character.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<strong> Add Character: </strong> </br>
+You are in the add a characters page where you can input information about a character in the franchise thats not added already, or missed by other fans
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Backend
 
-### `npm test`
+backend used from Kevin Butler: https://github.com/kevinjbutler1994/Express-Project-API </br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technology Used
 
-### `npm run build`
+REACT: I used react for its library, and framework to develop this app </br>
+CSS & HTML: I styled the app with CSS, and HTML for the structure of th app </br>
+JAVASCRIPT: I used JS to inject javascript in the react enviroment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## MVP 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The goal of this project is to show full CRUD on this app with the given backend.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Post MVP 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The goal here is to expand more on this franchise, add more inputs to add details like planets, starships, fun facts. change the layout with a more fitting theme, add UX design, and more...
